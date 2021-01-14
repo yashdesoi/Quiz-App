@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 300px;
+    width: 100%;
+    padding: 1px;
+    color: royalblue;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.title {
+    font-size: 70px;
+    text-align: center;
+    margin: 107.2px 0 auto auto;
+}
+
+.score-board {
+    font-size: 20px;
+    text-align: center;
+    margin: 22.8px 0 auto auto; 
+    color: rgb(153, 153, 153);
+    display: none;
+}
+
+.score-board > span {
+    font-size: 50px;
+}
+
+.button-container {
+    text-align: center;
+    display: none;
+}
+
+main {
+    background-color: royalblue;
+    color: azure;
+    padding: 20px;
+    box-shadow: 0 -6px 20px rgba(0,0,0,0.5);
+
+    position: relative;
+    top: 300px;
+}
+
+li {
+    margin: 20px auto;
+}
+
+li > p {
+    margin: 0;
+}
+
+li:last-child {
+    list-style: none;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: max-content;
+    font-size: 15px;
+}
+
+.button-container > button,
+.submit-button {
+    width: 110px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    background-color: azure;
+    color: royalblue;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: inherit;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+.button-container > button {
+    width: 150px;
+    height: 60px;
+}
+
+.button-container > button:active,
+.submit-button:active {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.button-container > button:focus,
+.submit-button:focus {
+    outline: none;
+}
